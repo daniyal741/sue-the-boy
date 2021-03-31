@@ -1,0 +1,58 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminVariableConcept
+FamilyName:Acumin Variable Concept
+StyleName:Default
+MenuName:Acumin Variable Concept
+StyleBits:0
+WeightClass:275
+WidthClass:5
+AngleClass:0
+FullName:Acumin Variable Concept Default
+WritingScript:Roman
+OutlineFileName:/Users/olivialord/Desktop/12. Sue The Boy/3. Website Design/2. Finals/Sue Homepage Desktop/Document fonts/AcuminVariableConcept.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:CFF2VariableFont
+FileLength:1029036
+FileModTime:633513611
+NameArray:0,Win,1,Acumin Variable Concept
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/olivialord/Desktop/12. Sue The Boy/3. Website Design/2. Finals/Sue Homepage Desktop/Document fonts/AdobeFnt22.lst
+FileLength:1180
+FileModTime:637119285
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+MenuName:Arial
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Arial Bold
+WritingScript:Roman
+OutlineFileName:/Users/olivialord/Desktop/12. Sue The Boy/3. Website Design/2. Finals/Sue Homepage Desktop/Document fonts/Arial Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:750984
+FileModTime:637119285
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+
