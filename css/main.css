@@ -13,7 +13,7 @@
 *{
 
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 
 }
 
@@ -36,14 +36,18 @@ header{
     width: 100%;
     justify-content: flex-end;
     padding: 2rem 1rem;
-
     position: sticky;
     background-color: #f5f4ef;
     top: 0;
     z-index: 100;
+    transition: 0.5s;
+
 
 }
+.scrollHeader{
 
+    background-color: #f5f4ef;
+}
 header .logo{
 
     display: none;
@@ -211,15 +215,106 @@ a{
     font-family: arialBold;
 
 }
-.sec-1{
 
-    position: relative;
-}
-.sec-1 img{
+/*   Rings  */
 
-    width: 300px;
+    .rings{
 
-}
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+        margin:0;
+        padding: 4em 0;
+        row-gap: 5em;
+
+
+    }
+    .ring-1, .ring-2{
+
+        width: 30%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ring-1 .pic-info{
+
+        width: 80%;
+        margin-left: -6px;
+    }
+    .ring-1 .pic-info .pic-text{
+
+        width: 100%;
+        position: relative;
+    }
+    .ring-1 .pic-info .pic-text::before{
+    content: '1 ';
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    }
+    .ring-1 .pic-info .shop{
+
+        width: 25%;
+    }
+    .ring-2{
+
+        width: 40%;
+    }
+   
+    .ring-1 .ring-img-1{
+
+        width: 80%;
+        overflow: hidden;
+
+        }
+    .ring-1 img{
+
+        width: 250%;
+        object-fit: cover;
+        margin: -20% 0 -40% -75%;
+
+    }
+
+
+    .ring-2 .ring-img-2{
+
+        width: 90%;
+        overflow: hidden;
+
+        }
+    .ring-2 img{
+
+        width: 300%;
+        object-fit: cover;
+        margin: -30% 0% -30% -100%;
+
+    }
+
+    .ring-2 .pic-info{
+
+        width: 100%;
+        margin-left: -6px;
+    }
+    .ring-2 .pic-info .pic-text{
+
+        width: 50%;
+        position: relative;
+    }
+    .ring-2 .pic-info .pic-text::before{
+        content: '2';
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        }
+    .ring-2 .pic-info .shop{
+
+        width: 25%;
+    }
+   
+
+
 
 }
 
@@ -334,6 +429,98 @@ a{
         margin: auto;
     }
 
+
+    /* RINGS */
+
+
+    .rings{
+
+        flex-flow: column nowrap;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .ring-1{
+
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ring-1 .pic-info{
+
+        justify-content: space-between;
+    }
+    .ring-1 .pic-info .pic-text{
+
+        width: 40%;
+    }
+    .ring-1 .pic-info .shop{
+
+        width: 15%;
+    }
+
+
+    .ring-2{
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .ring-2 .ring-img-2{
+
+        width: 95%;
+    }
+
+    .ring-2 .pic-info{
+
+        justify-content: space-between;
+        width: 96%;
+    }
+    .ring-2 .pic-info .pic-text{
+
+        width: 35%;
+    }
+    .ring-2 .pic-info .shop{
+
+        width: 15%;
+    }
+
+
+    /* .rings{
+
+        width: 100%;
+    }
+    .ring-1{
+        width: 35%;
+    }
+    .ring-1 .ring-img-1{
+
+        width: 95%;
+    }
+
+    .ring-1 .pic-info{
+
+        width: 90%;
+    }
+    .ring-1 .pic-info .pic-text{
+
+        width: 70%;
+    }
+    .ring-1 .pic-info .shop a{
+
+        padding: 0 0 0 8px;
+
+    }
+
+    .ring-2 .pic-info .pic-text{
+
+        width: 60%;
+    }
+    .ring-2 .pic-info .shop{
+
+        width: 40%;
+    } */
+
 }
 
 @media screen and (max-width:375px){
@@ -387,13 +574,63 @@ a{
 
         font-size: 28px;
     }
+
+    /* RINGS */
+
+    .ring-1 .pic-info {
+
+        width: 82%;
+        
+    }
+    .ring-1 .pic-info .pic-text{
+
+        width: 75%;
+    }
+    .ring-1 .pic-info .shop{
+
+        width: 25%;
+    }
+    .ring-1 .pic-info .shop a{
+
+        padding: 0 0 0 8px;
+
+    }
+    .ring-2 .pic-info {
+
+        width: 96%;
+        
+    }
+    .ring-2 .pic-info .pic-text{
+
+        width: 75%;
+    }
+    .ring-2 .pic-info .shop{
+
+        width: 25%;
+    }
+    .ring-2 .pic-info .shop a{
+
+        padding: 0 0 0 8px;
+
+    }
+
 }
 
 @media screen and (max-width:320px){
     
     .right .cart{
 
-        width: 60%;
+        width: 45%;
         padding: 0;
+    }
+
+    .ring-2 .pic-info {
+
+        width: 96%;
+        
+    }
+    .ring-2 .pic-info .shop{
+
+        width: 30%;
     }
 }
