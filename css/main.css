@@ -223,8 +223,8 @@ a{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        width: 90%;
-        margin:0;
+        width: 95%;
+        margin:auto;
         padding: 4em 0;
         row-gap: 5em;
 
@@ -232,7 +232,7 @@ a{
     }
     .ring-1, .ring-2{
 
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
@@ -280,15 +280,15 @@ a{
 
     .ring-2 .ring-img-2{
 
-        width: 90%;
+        width: 95%;
         overflow: hidden;
 
         }
     .ring-2 img{
 
-        width: 300%;
+        width: 290%;
         object-fit: cover;
-        margin: -30% 0% -30% -100%;
+        margin: -30% 0% -30% -95%;
 
     }
 
@@ -316,6 +316,43 @@ a{
 
 
 
+}
+
+@media screen and (max-width:1024px){
+    
+    /* RINGS */
+
+    .rings{
+        width: 90%;
+    }
+    .ring-1{
+
+        width: 40%;
+    }
+    .ring-1 .pic-info .pic-text{
+
+        width: 70%;
+
+    }
+
+    .ring-1 .pic-info .shop{
+
+        width: 30%;
+
+    }
+
+
+    .ring-2 .pic-info .pic-text{
+
+        width: 70%;
+
+    }
+
+    .ring-2 .pic-info .shop{
+
+        width: 30%;
+
+    }
 }
 
 @media screen and (max-width:768px){
@@ -453,7 +490,7 @@ a{
     }
     .ring-1 .pic-info .pic-text{
 
-        width: 40%;
+        width: 35%;
     }
     .ring-1 .pic-info .shop{
 
@@ -486,41 +523,37 @@ a{
     }
 
 
-    /* .rings{
+}
 
-        width: 100%;
-    }
-    .ring-1{
-        width: 35%;
-    }
-    .ring-1 .ring-img-1{
-
-        width: 95%;
-    }
-
+@media screen and (max-width:425px){
+    
     .ring-1 .pic-info{
 
-        width: 90%;
+        width: 80%;
     }
     .ring-1 .pic-info .pic-text{
 
-        width: 70%;
-    }
-    .ring-1 .pic-info .shop a{
-
-        padding: 0 0 0 8px;
-
-    }
-
-    .ring-2 .pic-info .pic-text{
-
         width: 60%;
     }
+
+    .ring-1 .pic-info .shop{
+
+        width: 25%;
+    }
+
+    .ring-2 .pic-info{
+
+        width: 96%;
+    }
+    .ring-2 .pic-info .pic-text{
+
+        width: 70%;
+    }
+
     .ring-2 .pic-info .shop{
 
-        width: 40%;
-    } */
-
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:375px){
@@ -623,6 +656,17 @@ a{
         width: 45%;
         padding: 0;
     }
+
+    .ring-1 .pic-info .pic-text{
+
+        width: 70%;
+        
+    }
+    .ring-1 .pic-info .shop{
+
+        width: 30%;
+    }
+
 
     .ring-2 .pic-info {
 
