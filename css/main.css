@@ -197,7 +197,7 @@ a{
 }
 .pic-info p{
 
-    margin: 0.4em;
+    margin: 0.2em;
     font-family: 'AcuminVariableConcept', sans-serif;
 }
 
@@ -242,21 +242,31 @@ a{
 
         width: 80%;
         margin-left: -6px;
+        align-items: flex-start;
     }
     .ring-1 .pic-info .pic-text{
 
         width: 100%;
+        padding: 0.4em 0;
+
         position: relative;
     }
     .ring-1 .pic-info .pic-text::before{
     content: '1 ';
     position: absolute;
-    top: 5px;
-    left: -10px;
+    top: 8px;
+    left: -15px;
+    font-family: 'AcuminVariableConcept', sans-serif;
+
     }
     .ring-1 .pic-info .shop{
 
-        width: 25%;
+        width: 21%;
+    }
+
+    .ring-1 .pic-info .shop a{
+
+        padding: 0 0.3em;
     }
     .ring-2{
 
@@ -298,22 +308,27 @@ a{
 
         width: 100%;
         margin-left: -6px;
+
     }
     .ring-2 .pic-info .pic-text{
 
         width: 50%;
         position: relative;
+        padding: 0.4em 0;
+
     }
     .ring-2 .pic-info .pic-text::before{
         content: '2';
         position: absolute;
-        top: 5px;
-        left: -10px;
+        top: 8px;
+        left: -15px;
+        font-family: 'AcuminVariableConcept', sans-serif;
+
         
         }
     .ring-2 .pic-info .shop{
 
-        width: 25%;
+        width: 22%;
     }
    
 
@@ -386,19 +401,21 @@ a{
     .designs .pic-info .pic-text{
 
         width: 62%;
+        padding: 0.4em;
         position: relative;
     }
 
     .designs .pic-info .pic-text::before{
         content: '3 ';
         position: absolute;
-        top: 3px;
+        top: 8px;
         left: -15px;
+        font-family: 'AcuminVariableConcept', sans-serif;
+
         }
     .designs .pic-info .shop{
 
-        width: 20%;
-        justify-content: flex-end;
+        width: 13%;
     }
 
 
@@ -604,6 +621,12 @@ a{
 
         width: 35%;
     }
+
+    .ring-2 .pic-info .pic-text::before{
+    
+        top: 10px;
+    
+    }
     .ring-2 .pic-info .shop{
 
         width: 15%;
@@ -648,8 +671,10 @@ a{
         justify-content: space-around;
     }
 
-    .designs .pic-info .pic-text{
+    .designs .pic-info .pic-text::before{
 
+        top: 9px;
+        left: -15px;
 
     }
     .designs .pic-info .shop{
@@ -681,11 +706,26 @@ a{
 
     }
 
+    .bg .pic-info .pic-text{
+
+        padding: 0.4em 0;
+    }
+    .bg .pic-info .pic-text p{
+
+        margin: 0.1em 0;
+        font-size: 14px;
+    }
+    .bg .pic-info .shop a{
+
+        font-size: 12px;
+        padding: 0 0.3em ;
+    }
+
     /* RINGS */
 
     .ring-1 .pic-info{
 
-        width: 80%;
+        width: 82%;
         padding: 0.4em 0;
 
     }
@@ -693,15 +733,35 @@ a{
 
         width: 60%;
     }
+    .ring-1 .pic-info .pic-text::before{
 
+        top: 8px;
+        left: -15px;
+        font-size: 14px;
+    }
+    .ring-1 .pic-info .pic-text p{
+
+        font-size: 14px;
+
+    }
     .ring-1 .pic-info .shop{
 
-        width: 25%;
+        width: 20%;
     }
 
+    .ring-1 .pic-info .shop a{
+
+        padding: 0 0.2em;
+        font-size: 12px;
+    }
+
+    .ring-2 .ring-img-2{
+
+        width: 94%;
+    }
     .ring-2 .pic-info{
 
-        width: 96%;
+        width: 95%;
         padding: 0.4em 0;
 
     }
@@ -709,10 +769,30 @@ a{
 
         width: 70%;
     }
+    .ring-2 .pic-info .pic-text p{
+
+        font-size: 14px;
+
+
+    }
+    .ring-2 .pic-info .pic-text::before{
+
+        font-size: 14px;
+        top: 9px;
+        left: -15px;
+
+    }
 
     .ring-2 .pic-info .shop{
 
-        width: 25%;
+        width: 22%;
+    }
+
+    .ring-2 .pic-info .shop a{
+
+        padding: 0 0.2em;
+        font-size: 12px;
+
     }
 
     .main-heading{
@@ -765,13 +845,15 @@ a{
 
     .designs .pic-info .pic-text{
 
-        width: 75%;
+        width: 76%;
 
     }
 
     .designs .pic-info .pic-text::before{
 
-        left: -13px;
+        top: 8px;
+        left: -15px;
+        font-size: 14px;
     }
     .designs .pic-info .pic-text p{
 
@@ -785,7 +867,7 @@ a{
      }
     .designs .pic-info .shop{
 
-        width: 15%;
+        width: 18%;
 
     }
 
@@ -871,12 +953,21 @@ a{
     }
     .ring-2 .pic-info {
 
-        width: 96%;
+        width: 95%;
         
     }
     .ring-2 .pic-info .pic-text{
 
-        width: 75%;
+        width: 65%;
+    }
+    .ring-2 .pic-info .pic-text p{
+
+        font-size: 13px;
+    }
+    .ring-2 .pic-info .pic-text::before{
+
+        left: -12px;
+        font-size: 13px;
     }
     .ring-2 .pic-info .shop{
 
@@ -892,7 +983,7 @@ a{
 
     .designs .pic-info{
 
-        width: 95%;
+        width: 97%;
         justify-content: space-between;
         align-items: center;
         padding: 0.4em 0;
@@ -906,13 +997,13 @@ a{
 
     .designs .pic-info .pic-text::before{
 
-        left: -13px;
-        top: 4px;
-        font-size: 12px;
+        left: -6px;
+        top: 9px;
+        font-size: 13px;
     }
     .designs .pic-info .pic-text p{
 
-        font-size: 12px;
+        font-size: 13px;
 
 
     }
@@ -923,7 +1014,7 @@ a{
      }
     .designs .pic-info .shop{
 
-        width: 20%;
+        width: 27%;
 
     }
 
@@ -956,8 +1047,14 @@ a{
 
     .ring-2 .pic-info {
 
-        width: 96%;
+        width: 95%;
         
+    }
+    .ring-2 .pic-info .pic-text::before{
+
+
+        top: 8px;
+        left: -12px;
     }
     .ring-2 .pic-info .shop{
 
@@ -982,12 +1079,12 @@ a{
     .designs .pic-info .pic-text::before{
 
 
-        top: 3px;
-        left: -12px;
+        top: 8px;
+        left: -6px;
     }
     .designs .pic-info .shop{
 
-        width: 9%;
+        width: 28%;
         
     }
 
