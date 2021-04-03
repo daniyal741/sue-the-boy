@@ -425,8 +425,14 @@ a{
         z-index: 999999;
         width: 100%;
         right: 0;
-        margin: 3em 0 0 0;
-        padding: 3em 0;
+        margin: 3em 0 0em 0;
+        padding: 2em 0 4em 0;
+        transition: 0.5s;
+        /* display: none; */
+    }
+    .scrollFooter{
+
+        display: block;
     }
 
     .footer-flex{

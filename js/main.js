@@ -16,7 +16,9 @@ $(document).ready(function(){
 
    $(window).scroll(function(){
 
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
+    let windowHeight = $(window).innerHeight();
+    let docHeight = $(document).height();
 
     if(scroll >= 50)
     {
@@ -28,7 +30,7 @@ $(document).ready(function(){
 
 
     }
-
+    
    });
 
 
