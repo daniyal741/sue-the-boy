@@ -309,6 +309,7 @@ a{
         position: absolute;
         top: 5px;
         left: -10px;
+        
         }
     .ring-2 .pic-info .shop{
 
@@ -385,8 +386,15 @@ a{
     .designs .pic-info .pic-text{
 
         width: 62%;
+        position: relative;
     }
 
+    .designs .pic-info .pic-text::before{
+        content: '3 ';
+        position: absolute;
+        top: 3px;
+        left: -15px;
+        }
     .designs .pic-info .shop{
 
         width: 20%;
@@ -612,24 +620,41 @@ a{
 
     .design-1{
 
-        width: 40%;
+        width: 45%;
 
+    }
+    .design-1 img{
+
+        height: 55vw;
+        margin: -15% 0 0 -25%;
     }
 
     .design-2{
 
-        width: 50%;
+        width: 45%;
+
+    }
+
+    .design-2 img{
+
+        height: 55vw;
+        margin: -5% 0 0 -127%;
 
     }
 
     .designs .pic-info{
 
-        width: 98%;
-        justify-content: space-evenly;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .designs .pic-info .pic-text{
 
+
+    }
+    .designs .pic-info .shop{
+
+        width: 15%;
 
     }
 
@@ -655,9 +680,14 @@ a{
         width: 25%;
 
     }
+
+    /* RINGS */
+
     .ring-1 .pic-info{
 
         width: 80%;
+        padding: 0.4em 0;
+
     }
     .ring-1 .pic-info .pic-text{
 
@@ -672,6 +702,8 @@ a{
     .ring-2 .pic-info{
 
         width: 96%;
+        padding: 0.4em 0;
+
     }
     .ring-2 .pic-info .pic-text{
 
@@ -686,6 +718,76 @@ a{
     .main-heading{
 
         font-size: 34px;
+    }
+
+
+    /* DESIGNS */
+
+
+    .designs{
+
+        width: 100%;
+        justify-content: flex-start;
+        column-gap: 5px;
+    }
+
+    .design-1{
+
+        width: 50%;
+
+    }
+    .design-1 img{
+
+        height: 65vw;
+        margin: -5% 0 0 -25%;
+    }
+
+    .design-2{
+
+        width: 45%;
+
+    }
+
+    .design-2 img{
+
+        height: 105vw;
+        margin: -0% 0 -89% -125%;
+
+    }
+
+    .designs .pic-info{
+
+        width: 98%;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4em 0;
+    }
+
+    .designs .pic-info .pic-text{
+
+        width: 80%;
+
+    }
+
+    .designs .pic-info .pic-text::before{
+
+        left: -13px;
+    }
+    .designs .pic-info .pic-text p{
+
+        font-size: 14px;
+
+    }
+    .designs .pic-info .shop{
+
+        width: 16%;
+
+    }
+
+    .designs .pic-info .shop a{
+
+        padding: 0 0.2em;
+        font-size: 12px;
     }
     
 }
@@ -779,6 +881,46 @@ a{
 
         padding: 0 0 0 8px;
 
+    }
+
+    /* DESIGN */
+
+    .designs .pic-info{
+
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4em 0;
+    }
+
+    .designs .pic-info .pic-text{
+
+        width: 80%;
+
+    }
+
+    .designs .pic-info .pic-text::before{
+
+        left: -13px;
+        top: 4px;
+        font-size: 12px;
+    }
+    .designs .pic-info .pic-text p{
+
+        font-size: 12px;
+
+
+    }
+    .designs .pic-info .shop{
+
+        width: 20%;
+
+    }
+
+    .designs .pic-info .shop a{
+
+        padding: 0 0.2em;
+        font-size: 12px;
     }
 
 }
