@@ -765,7 +765,7 @@ a{
 
     .designs .pic-info .pic-text{
 
-        width: 80%;
+        width: 75%;
 
     }
 
@@ -778,9 +778,14 @@ a{
         font-size: 14px;
 
     }
+    .designs .pic-info .pic-text p br{
+
+        display: none;
+ 
+     }
     .designs .pic-info .shop{
 
-        width: 16%;
+        width: 15%;
 
     }
 
@@ -911,6 +916,11 @@ a{
 
 
     }
+    .designs .pic-info .pic-text p br{
+
+        display: none;
+ 
+     }
     .designs .pic-info .shop{
 
         width: 20%;
@@ -961,7 +971,7 @@ a{
     }
     .designs .pic-info .pic-text{
 
-        width: 75%;
+        width: 70%;
 
     }
     .designs .pic-info .pic-text p br{
@@ -977,7 +987,7 @@ a{
     }
     .designs .pic-info .shop{
 
-        width: 20%;
+        width: 9%;
         
     }
 
