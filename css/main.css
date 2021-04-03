@@ -953,4 +953,40 @@ a{
 
         width: 30%;
     }
+
+    /* DESIGN */
+
+    .designs .pic-info {
+
+    }
+    .designs .pic-info .pic-text{
+
+        width: 75%;
+
+    }
+    .designs .pic-info .pic-text p br{
+
+       display: none;
+
+    }
+    .designs .pic-info .pic-text::before{
+
+
+        top: 3px;
+        left: -12px;
+    }
+    .designs .pic-info .shop{
+
+        width: 20%;
+        
+    }
+
+
+    .designs .pic-info .shop a{
+    
+    
+        font-size: 12px;
+
+    }
+
 }
