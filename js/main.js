@@ -18,13 +18,14 @@ $(document).ready(function(){
 
     var scroll = $(window).scrollTop();
 
-    if(scroll >= 100)
+    if(scroll >= 50)
     {
         $("header").addClass("scrollHeader");
     }
     else
     {
         $("header").removeClass("scrollHeader");
+
 
     }
 

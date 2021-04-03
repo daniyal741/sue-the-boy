@@ -316,6 +316,83 @@ a{
     }
    
 
+    /* DESIGNS */
+
+    .flex-design{
+
+        display: flex;
+        flex-flow: column nowrap;
+        
+        
+    }
+    .designs{
+
+        display: flex;
+        flex-flow: wrap;
+        justify-content:flex-end;
+        align-items: flex-end;
+        column-gap: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .design-1{
+
+        width: 30%;
+        height: min-content;
+        overflow: hidden;
+
+    }
+
+    .design-1 img{
+
+        display: block;
+        width: 280%;
+        opacity: 0.7;
+        object-fit: cover;
+        object-position: top; 
+        height: 35vw;
+        margin: 0% 0% -17% -25%;   
+    }
+
+    .design-2{
+
+        width: 40%;
+        height: min-content;
+        overflow: hidden;
+
+    }
+    .design-2 img{
+
+        display: block;
+        width: 280%;
+        opacity: 0.7;
+        object-fit: cover;
+        height: 35vw;
+        object-position: top; 
+        margin: 0 0 -0% -130%;     
+   
+
+    }
+    .designs .pic-info{
+
+        
+        width: 72%;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+    .designs .pic-info .pic-text{
+
+        width: 62%;
+    }
+
+    .designs .pic-info .shop{
+
+        width: 20%;
+        justify-content: flex-end;
+    }
+
 
 
 }
@@ -523,7 +600,38 @@ a{
 
         width: 15%;
     }
+    
+    /* DESIGNS */
 
+
+    .designs{
+
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .design-1{
+
+        width: 40%;
+
+    }
+
+    .design-2{
+
+        width: 50%;
+
+    }
+
+    .designs .pic-info{
+
+        width: 98%;
+        justify-content: space-evenly;
+    }
+
+    .designs .pic-info .pic-text{
+
+
+    }
 
 }
 
