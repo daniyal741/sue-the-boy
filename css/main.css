@@ -23,7 +23,6 @@ html,body{
     padding: 0;
     margin: 0;
     background-color: #f5f4ef;
-    position: relative;
 }
 
 @media screen and (max-width:1640px){
@@ -128,7 +127,7 @@ header .logo{
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .nav ul{
@@ -418,7 +417,93 @@ a{
         width: 13%;
     }
 
+    /* FOOTER */
 
+    footer {
+
+        position: absolute;
+        z-index: 999999;
+        width: 100%;
+        right: 0;
+        margin: 3em 0 0 0;
+        padding: 3em 0;
+    }
+
+    .footer-flex{
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+    }
+    footer .logo{
+
+        width: 5%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .links{
+
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+
+    }
+    .links ul{
+
+        list-style: none;
+        margin: 0 2vw;
+        padding: 0;
+    }
+    
+    .subscribe{
+        width: 35%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .subscribe label{
+
+        font-family: AcuminVariableConcept, sans-serif;
+        font-size: 14px;
+        
+    }
+    .subscribe a{
+
+        /* margin-bottom: -10px; */
+       
+    }
+    .subscribe input[type='email']{
+
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 0 1em 5px 1em;
+        width: 15vw;
+        font-family: AcuminVariableConcept, sans-serif;
+
+    }
+    .copy{
+
+        width: 15%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+    }
+
+    .copy p{
+
+        padding: 0;
+        margin: 0.1em 0;
+        font-family: AcuminVariableConcept, sans-serif;
+        font-size: 14px;
+
+    }
+    
+    
 
 }
 
@@ -457,14 +542,31 @@ a{
         width: 30%;
 
     }
+
+    /* FOOTER */
+
+    footer .logo{
+
+        width: 10%;
+    }
+    
+    .subscribe{
+
+        width: 35%;
+        justify-content: center;
+    }
+    .copy{
+
+        width: 20%;
+    }
 }
 
 @media screen and (max-width:768px){
     
-    .body{
+    /* .body{
 
         position: relative;
-    }
+    } */
     header{
         background-color: transparent;
         padding: 1em 0em;
@@ -683,6 +785,32 @@ a{
 
     }
 
+    /* FOOTER */
+
+    .footer-flex{
+
+        flex-flow: row wrap;
+        row-gap: 4em;
+    }
+
+    .logo{width: 10%;}
+    .links{
+        width: 80%;
+        justify-content: center;
+
+    }
+    .subscribe{
+        
+        width: 100%;
+        order: -1;
+ 
+    }
+    .copy{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width:425px){
@@ -877,6 +1005,36 @@ a{
         font-size: 12px;
     }
     
+     /* FOOTER */
+
+     .footer-flex{
+
+        flex-flow: row wrap;
+        row-gap: 3em;
+    }
+
+    .logo{
+        
+        width: 20%;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .links{
+        width: 85%;
+        justify-content: center;
+
+    }
+   
+    .subscribe input[type='email']
+    {
+        width: 35vw;
+    }
+    .links a{
+
+        font-size: 12px;
+    }
+    
 }
 
 @media screen and (max-width:375px){
@@ -1024,6 +1182,31 @@ a{
         font-size: 12px;
     }
 
+     /* FOOTER */
+
+     .footer-flex{
+
+        flex-flow: row wrap;
+        row-gap: 3em;
+    }
+
+    .logo{
+        
+        width: 10%;
+    }
+   
+    .links{
+        width: 85%;
+        justify-content: flex-end;
+
+    }
+   
+    .subscribe input[type='email']
+    {
+        width: 40vw;
+    }
+    
+
 }
 
 @media screen and (max-width:320px){
@@ -1094,6 +1277,35 @@ a{
     
         font-size: 12px;
 
+    }
+
+       /* FOOTER */
+
+       .footer-flex{
+
+        flex-flow: row wrap;
+        row-gap: 4em;
+    }
+
+    .logo{
+        
+        width: 10%;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .links{
+        width: 90%;
+
+    }
+    .links a{
+
+        font-size: 12px;
+    }
+   
+    .subscribe input[type='email']
+    {
+        width: 40vw;
     }
 
 }
