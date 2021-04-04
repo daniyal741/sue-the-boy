@@ -675,7 +675,7 @@ a{
         width: 60%;
         justify-content: center;
         align-items: center;
-        padding-top: 3em ;
+        padding-top: 2em ;
 
     }
     
@@ -703,26 +703,25 @@ a{
     }
     .cross{
 
-        width: 90%;
-        display: flex;
-        justify-content: flex-end;
-        cursor: pointer;
+      float: right;
+      position: relative;
+      right: 20px;
+      cursor: pointer;
+
     }
     .diagonal{
 
         background-color: transparent;
         height: 3px;
         width: 24px;
-        
-
     }
     .diagonal::before, .diagonal::after{
     
         content: '';
         position: absolute;
         background-color: black;
-        height: 3px;
-        width: 24px;
+        height: 1px;
+        width: 18px;
     
     }  
      .diagonal::before{
@@ -1164,11 +1163,7 @@ a{
     
         width: 40px;
     }
-    .nav{
-
-        /* margin-top: -5em; */
-
-    }
+   
     .hamburger{
         
         width: 45%;
