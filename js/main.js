@@ -32,7 +32,7 @@ $(document).ready(function(){
 
     }
 
-    if(scroll  + windowHeight +50>= docHeight -100)
+    if(scroll  + windowHeight>= docHeight )
     {
 
         $("footer").show(500);

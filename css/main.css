@@ -828,11 +828,15 @@ a{
 
     .logo{
         width: 10%;
+        order: 2;
+
     }
 
     .links{
         width: 80%;
         justify-content: center;
+        order: 3;
+
 
     }
     .links ul{
@@ -842,13 +846,15 @@ a{
     .subscribe{
         
         width: 100%;
-        order: -1;
+        order: 1;
  
     }
     .copy{
         width: 100%;
         justify-content: center;
         align-items: center;
+        order: 4;
+
     }
 
 }
