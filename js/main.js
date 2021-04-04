@@ -17,8 +17,9 @@ $(document).ready(function(){
    $(window).scroll(function(){
 
     let scroll = $(window).scrollTop();
-    let windowHeight = $(window).innerHeight();
+    let windowHeight = $(window).height();
     let docHeight = $(document).height();
+    let temp = 0;
 
     if(scroll >= 50)
     {
@@ -30,9 +31,25 @@ $(document).ready(function(){
 
 
     }
+
+    if(scroll  + windowHeight +50>= docHeight -100)
+    {
+
+        $("footer").show(500);
+        // $("footer").addClass("scrollFooter");
+
+    
+    }
+    else{
+
+        $("footer").hide(0);
+        // $("footer").removeClass("scrollFooter");
+        // scroll =  scroll -windowHeight;
+
+    }
     
    });
 
-
+   
 
 });
