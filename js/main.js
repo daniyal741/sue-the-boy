@@ -4,19 +4,19 @@ $(document).ready(function(){
 
     $('.nav').css('transform', 'translateX(0%)');
     $('header').css('transform', 'translateY(0%)');
-    $('.bg img').css('transform', 'translateY(0%)');
-    $('.main-heading').css('transform', 'translateY(0%)');
 
 
     $(".hamburger").click(function(){
 
         
-        $(".nav").toggle();
 
-        $(".nav").click(function(){
+        $(".nav").addClass("show-nav");
+        // $('.nav').css('transform', 'translateX(0%)');
+
+        $(".cross").click(function(){
 
         
-            $(".nav").hide();
+            $(".nav").removeClass("show-nav");
     
     
         });

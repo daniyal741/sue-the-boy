@@ -168,8 +168,7 @@ a{
     height:100%;
     /* margin: 0 0 -10% 0; */
     object-fit: cover;
-    opacity: 0.7;transition: all ease-in 1s;
-    transform: translateY(100%);
+    opacity: 0.7;
 }
 .main-heading{
 
@@ -186,7 +185,6 @@ a{
     text-align: center;
     z-index: 10;
     letter-spacing: 2px;
-    transition: all ease-in 1s;
 
 }
 
@@ -432,7 +430,8 @@ a{
 
     footer {
 
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: none;
         position: fixed;
         width: 100%;
         bottom: 0;
@@ -441,14 +440,13 @@ a{
         padding: 3em 0 4em 0;
         transition: all linear 0.5s;
         transform: translateY(100%);
-
         background-color: #f5f4ef;
 
     }
     .scrollFooter{
 
         display: block;
-        visibility: visible;
+        /* visibility: visible; */
         transform: translateY(0%);
 
 
@@ -672,6 +670,74 @@ a{
     .nav{
 
         display: none;
+        top: 0;
+        bottom: 0;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em ;
+
+    }
+    
+    .nav .logo{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        
+    }
+    .nav ul{
+    
+        width: 80%;
+        margin: 0.5em auto;
+    }
+
+   
+    .nav ul li{
+
+        margin: 0.5em auto;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    }
+    .cross{
+
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .diagonal{
+
+        background-color: transparent;
+        height: 3px;
+        width: 24px;
+        
+
+    }
+    .diagonal::before, .diagonal::after{
+    
+        content: '';
+        position: absolute;
+        background-color: black;
+        height: 3px;
+        width: 24px;
+    
+    }  
+     .diagonal::before{
+
+        transform: rotate(45deg) translate(5px,-5px);
+
+    }
+     .diagonal::after{
+
+        transform: rotate(-45deg) translate(5px,5px);
+
+    }
+    .show-nav{
+
+        display: block;
     }
     .bg{
 
@@ -691,21 +757,7 @@ a{
 
         width: 50%;
     }
-    .nav{
-
-        width: 60%;
-        align-items: center;
-    }
-    .nav .logo{
-        width: 50%;
-        margin: auto;
-    }
-    .nav ul{
     
-        width: 50%;
-        margin: auto;
-    }
-
 
     /* RINGS */
 
@@ -1114,7 +1166,7 @@ a{
     }
     .nav{
 
-        margin-top: -5em;
+        /* margin-top: -5em; */
 
     }
     .hamburger{
