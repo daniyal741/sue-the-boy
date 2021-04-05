@@ -3,6 +3,8 @@
 $(document).ready(function(){
 
     $(".nav").css('transform', 'translateX(0%)');
+    // $("nav").css('transform', 'translateX(0%)');
+
     $("header").css('transform', 'translateY(0%)');
 
 
@@ -10,14 +12,19 @@ $(document).ready(function(){
 
         
 
-        $(".nav").addClass("show-nav");
-        // $('.nav').css('transform', 'translateX(0%)');
+        $("nav").addClass("show-nav");
+        $('nav').css('visibility' , 'visible');
+        $('.hamburger').css('visibility', 'hidden');
+
+        
+        
 
         $(".cross").click(function(){
 
         
-            $(".nav").removeClass("show-nav");
-    
+            $("nav").removeClass("show-nav");
+            $('.hamburger').css('visibility', 'visible');
+
     
         });
     });
@@ -45,16 +52,39 @@ $(document).ready(function(){
     // $(window).off("scroll");  // Stop the Scroll
 
 
-        if(scroll  + windowHeight >= docHeight -100)
+        if(scroll  + windowHeight >= docHeight -200)
         {
-            $("footer").fadeIn(500);
-            
-            // $( "footer" ).animate({ "bottom": "+=" + $("footer").height+"px" }, "slow" );
+            $('footer').css('visibility', 'visible');
+
+            if( $('nav').css('display')=="block")
+            {
+                $("nav").removeClass("show-nav");
+                $('nav').css('visibility' , 'hidden');
+                $('.hamburger').css('visibility', 'visible');
+
+            }
+
+
         }
-        else if(scroll + windowHeight < docHeight +200)
+        else if(scroll + windowHeight -200< docHeight )
         {
 
-            $("footer").fadeOut();
+            $('footer').css('visibility', 'hidden');
+
+            if($('nav').css('display')=="block"){
+
+                $('nav').css('visibility' , 'visible');
+
+                //  $('.hamburger').css('visibility', 'hidden');
+
+
+
+            }
+
+
+           
+
+
             // $("footer").removeClass("scrollFooter");
             // $( "footer" ).animate({ "bottom": "-=" + $("footer").height+"px" }, "slow" );
 

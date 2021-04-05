@@ -43,6 +43,7 @@ header{
     z-index: 100;
     transition: all linear 0.5s;
     transform: translateY(-100%);
+    
 
 
 }
@@ -111,24 +112,47 @@ header .logo{
     width: 24px;
 
 }
+.main-container{
 
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+
+
+}
+.container{
+
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0;
+}
 .main-bg{
 
     display: flex;
     justify-content: flex-end;
 
 }
+nav{
+
+   
+    width: 20%;
+    background-color: #f5f4ef;
+    
+
+}
 .nav{
 
-    width: 20%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     position: sticky;
-    background-color: #f5f4ef;
-    left: 0;
+    /* background-color: #f5f4ef; */
+    top: 100px;
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 999;
@@ -156,7 +180,7 @@ a{
 }
 .bg{
 
-    width: 80%;
+    width: 100%;
     height: min-content;        
     overflow: hidden;
     align-self: flex-end;
@@ -433,8 +457,6 @@ a{
     footer {
 
         /* visibility: hidden; */
-        display: none;
-        position: relative;
         width: 100%;
         bottom: 0;
         z-index: 999999;
@@ -447,7 +469,7 @@ a{
     }
     .scrollFooter{
 
-        /* display: block; */
+        display: block;
         /* visibility: visible; */
         /* transform: translateY(0%); */
 
@@ -601,6 +623,16 @@ a{
 
         position: relative;
     } */
+
+    .container{
+
+        width: 100%;
+    }
+    nav{
+
+        display: none;
+    }
+  
     header{
         background-color: transparent;
         padding: 1em 0em;
@@ -669,23 +701,30 @@ a{
     .right .cart{
         width: 35%;
     }
+    nav{
+
+        width: 50%;
+        top: 0;
+        position: sticky;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        /* padding-top: 4em ; */
+        z-index: 10000;
+
+    }
     .nav{
 
-        display: none;
-        top: 0;
-        bottom: 0;
-        width: 60%;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2em ;
+        align-items: flex-end;
+        height: 100vh;
+
 
     }
     
     .nav .logo{
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        margin: auto;
 
         
     }
@@ -705,7 +744,6 @@ a{
     }
     .cross{
 
-      float: right;
       position: relative;
       right: 20px;
       cursor: pointer;
@@ -737,8 +775,10 @@ a{
 
     }
     .show-nav{
-
+        visibility: visible;
         display: block;
+        position: fixed;
+        top: 0;
     }
     .bg{
 
@@ -924,7 +964,9 @@ a{
 }
 
 @media screen and (max-width:425px){
-    
+    nav{
+        width: 100%;
+    }
     .right{
 
         width: 35%;
@@ -1336,6 +1378,7 @@ a{
 }
 
 @media screen and (max-width:320px){
+    
     
     .right .cart{
 
