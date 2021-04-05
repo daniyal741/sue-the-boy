@@ -2,8 +2,8 @@
 
 $(document).ready(function(){
 
-    $('.nav').css('transform', 'translateX(0%)');
-    $('header').css('transform', 'translateY(0%)');
+    $(".nav").css('transform', 'translateX(0%)');
+    $("header").css('transform', 'translateY(0%)');
 
 
     $(".hamburger").click(function(){
@@ -32,6 +32,8 @@ $(document).ready(function(){
     if(scroll >= 50)
     {
         $("header").addClass("scrollHeader");
+        // $("header").css('   ', 'translateY(0%)');
+
     }
     else
     {
@@ -40,33 +42,20 @@ $(document).ready(function(){
 
     }
 
-//     if(scroll  + windowHeight >= docHeight )
-//     {
+    // $(window).off("scroll");  // Stop the Scroll
 
-//         // $("footer").show(500);
-//         $("footer").addClass("scrollFooter");
 
-    
-//     }
-//     else{
-
-//         // $("footer").hide(0);
-//         $("footer").removeClass("scrollFooter");
-//         // scroll =  scroll -windowHeight;
-
-//     }
-    
-//    });
         if(scroll  + windowHeight >= docHeight -100)
         {
-            $("footer").addClass("scrollFooter");
-
+            $("footer").fadeIn(500);
+            
             // $( "footer" ).animate({ "bottom": "+=" + $("footer").height+"px" }, "slow" );
         }
         else if(scroll + windowHeight < docHeight +200)
         {
 
-            $("footer").removeClass("scrollFooter");
+            $("footer").fadeOut();
+            // $("footer").removeClass("scrollFooter");
             // $( "footer" ).animate({ "bottom": "-=" + $("footer").height+"px" }, "slow" );
 
         }

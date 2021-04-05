@@ -126,7 +126,7 @@ header .logo{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-    position: fixed;
+    position: sticky;
     background-color: #f5f4ef;
     left: 0;
     overflow-x: hidden;
@@ -342,7 +342,7 @@ a{
 
     .sec-2{
 
-        margin: 0 0 35vh 0;
+        /* margin: 0 0 35vh 0; */
     }
     .flex-design{
 
@@ -434,22 +434,22 @@ a{
 
         /* visibility: hidden; */
         display: none;
-        position: fixed;
+        position: relative;
         width: 100%;
         bottom: 0;
         z-index: 999999;
         margin: 3em 0 0em 0;
         padding: 3em 0 4em 0;
-        transition: all linear 0.5s;
-        transform: translateY(100%);
-        background-color: #f5f4ef;
+        /* transition: all linear 0.5s; */
+        /* transform: translateY(100%); */
+        /* background-color: #f5f4ef; */
 
     }
     .scrollFooter{
 
-        display: block;
+        /* display: block; */
         /* visibility: visible; */
-        transform: translateY(0%);
+        /* transform: translateY(0%); */
 
 
     }
@@ -572,7 +572,7 @@ a{
 
     .sec-2{
 
-        margin: 0 0 30vh 0;
+        /* margin: 0 0 30vh 0; */
     }
 
     /* FOOTER */
@@ -824,7 +824,7 @@ a{
     /* DESIGNS */
     .sec-2{
 
-        margin: 0 0 45vh 0;
+        /* margin: 0 0 45vh 0; */
     }
 
     .designs{
@@ -1042,7 +1042,7 @@ a{
     /* DESIGNS */
     .sec-2{
 
-        margin: 0 0 67vh 0;
+        /* margin: 0 0 67vh 0; */
     }
 
 
@@ -1259,7 +1259,7 @@ a{
 
     .sec-2{
 
-        margin: 0 0 55vh 0;
+        /* margin: 0 0 55vh 0; */
     }
     .designs .pic-info{
 
