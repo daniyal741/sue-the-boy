@@ -25,6 +25,7 @@ html,body{
     padding: 0;
     margin: 0;
     background-color: #f5f4ef;
+    position: relative;
 }
 
 @media screen and (max-width:1640px){
@@ -40,7 +41,7 @@ header{
     position: sticky;
     background-color: #f5f4ef;
     top: 0;
-    z-index: 100;
+    z-index: 99;
     transition: all linear 0.5s;
     transform: translateY(-100%);
     
@@ -117,17 +118,15 @@ nav .logo{
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
-    margin: 0;
 
 
 }
 .container{
 
-    position: relative;
     display: flex;
     flex-flow: column nowrap;
-    width: 80%;
-    margin: 0;
+    width: 100%;
+    margin-left: auto;
 }
 .main-bg{
 
@@ -140,7 +139,9 @@ nav{
    
     width: 20%;
     background-color: #f5f4ef;
-    
+    padding: 2em 0;
+    z-index: 999;
+   
 
 }
 .nav{
@@ -149,15 +150,15 @@ nav{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: sticky;
-    /* background-color: #f5f4ef; */
-    top: 100px;
+    top: 80px;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 999;
-    transition: all linear 0.5s;
-    transform: translateX(-100%);
+    /* background-color: #f5f4ef; */
+   
+    /* transition: all linear 0.5s;
+    transform: translateX(-100%); */
 }
 
 .nav ul{
@@ -459,7 +460,7 @@ a{
         /* visibility: hidden; */
         width: 100%;
         bottom: 0;
-        z-index: 999999;
+        z-index: 99;
         margin: 3em 0 0em 0;
         padding: 3em 0 4em 0;
         transition: all linear 0.5s;
@@ -636,6 +637,7 @@ a{
     nav{
 
         display: none;
+        padding: 0;
     }
   
     header{
@@ -710,7 +712,6 @@ a{
 
         width: 50%;
         top: 0;
-        position: sticky;
         justify-content: flex-start;
         align-items: flex-start;
         
@@ -751,6 +752,7 @@ a{
 
       position: relative;
       right: 20px;
+      top: 20px;
       cursor: pointer;
 
     }
