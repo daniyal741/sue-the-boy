@@ -52,41 +52,19 @@ $(document).ready(function(){
     // $(window).off("scroll");  // Stop the Scroll
 
 
-        if(scroll  + windowHeight >= docHeight -200)
+        if(scroll  + windowHeight >= docHeight -50)
         {
-            $('footer').css('visibility', 'visible');
 
-            if( $('nav').css('display')=="block")
-            {
-                $("nav").removeClass("show-nav");
-                $('nav').css('visibility' , 'hidden');
-                $('.hamburger').css('visibility', 'visible');
-
-            }
-
+            $('footer').css('position', 'sticky');
 
         }
-        else if(scroll + windowHeight -200< docHeight )
+        else if(scroll + windowHeight < docHeight )
         {
 
-            $('footer').css('visibility', 'hidden');
 
-            if($('nav').css('display')=="block"){
-
-                $('nav').css('visibility' , 'visible');
-
-                //  $('.hamburger').css('visibility', 'hidden');
+            $('footer').css('position', 'relative');
 
 
-
-            }
-
-
-           
-
-
-            // $("footer").removeClass("scrollFooter");
-            // $( "footer" ).animate({ "bottom": "-=" + $("footer").height+"px" }, "slow" );
 
         }
    

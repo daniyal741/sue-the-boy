@@ -56,9 +56,9 @@ header .logo{
     display: none;
 }
 
-.logo{
+nav .logo{
 
-    width: 30%;
+    width: 40%;
     
 }
 
@@ -462,7 +462,8 @@ a{
         z-index: 999999;
         margin: 3em 0 0em 0;
         padding: 3em 0 4em 0;
-        /* transition: all linear 0.5s; */
+        transition: all linear 0.5s;
+        background-color: #f5f4ef;
         /* transform: translateY(100%); */
         /* background-color: #f5f4ef; */
 
@@ -556,6 +557,10 @@ a{
 
 @media screen and (max-width:1024px){
     
+    nav .logo{
+
+        width: 60%;
+    }
     /* RINGS */
 
     .rings{
