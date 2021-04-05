@@ -782,7 +782,7 @@ a{
 
     }
     .show-nav{
-        visibility: visible;
+        /* visibility: visible; */
         display: block;
         position: fixed;
         top: 0;

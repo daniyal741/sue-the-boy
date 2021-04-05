@@ -56,7 +56,6 @@ $(document).ready(function(){
         {
 
             $('footer').css('position', 'sticky');
-            // $('nav').css('position', 'relative');
 
 
         }
@@ -65,7 +64,6 @@ $(document).ready(function(){
 
 
             $('footer').css('position', 'relative');
-            // $('nav').css('position', 'sticky');
 
 
 
