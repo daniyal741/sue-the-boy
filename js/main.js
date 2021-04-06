@@ -2,20 +2,34 @@
 
 $(document).ready(function(){
 
-    //  $("nav").css('transform', 'translateX(0%)');
-    //  $('@media screen and (max-width: 1640px)').css('transform', 'translateX(0%)');
+    if ($(window).width() > 768){ 
+      
+        $("nav").css('transform', 'translateX(0%)');
+
+    } 
+    else
+    {
+
+        $("nav").css('transform', 'translateX(-100%)');
+
+
+    }      
+    
 
     $(window).resize(function(){
-        if ($(window).width() >= 1024){ 
+        if ($(window).width() > 768){ 
       
             $("nav").css('transform', 'translateX(0%)');
     
-        }   
-        if ($(window).width() < 1024){ 
-          
+        }  
+        else{
+
             $("nav").css('transform', 'translateX(-100%)');
-    
-        }   
+
+        }
+
+       
+       
 
     });
    
