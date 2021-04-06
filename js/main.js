@@ -11,6 +11,8 @@ $(document).ready(function(){
     {
 
         $("nav").css('transform', 'translateX(-100%)');
+        $('.hamburger').css('visibility', 'visible');
+
 
 
     }      
@@ -25,6 +27,7 @@ $(document).ready(function(){
         else{
 
             $("nav").css('transform', 'translateX(-100%)');
+            $('.hamburger').css('visibility', 'visible');
 
         }
 
