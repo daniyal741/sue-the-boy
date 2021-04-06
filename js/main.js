@@ -2,9 +2,23 @@
 
 $(document).ready(function(){
 
-    $(".nav").css('transform', 'translateX(0%)');
-    // $("nav").css('transform', 'translateX(0%)');
+    //  $("nav").css('transform', 'translateX(0%)');
+    //  $('@media screen and (max-width: 1640px)').css('transform', 'translateX(0%)');
 
+    $(window).resize(function(){
+        if ($(window).width() >= 1024){ 
+      
+            $("nav").css('transform', 'translateX(0%)');
+    
+        }   
+        if ($(window).width() < 1024){ 
+          
+            $("nav").css('transform', 'translateX(-100%)');
+    
+        }   
+
+    });
+   
     $("header").css('transform', 'translateY(0%)');
 
 
@@ -13,8 +27,9 @@ $(document).ready(function(){
         
 
         $("nav").addClass("show-nav");
-        $('nav').css('visibility' , 'visible');
+        // $('nav').css('visibility' , 'visible');
         $('.hamburger').css('visibility', 'hidden');
+        $("nav").css('transform', 'translateX(0%)');
 
         
         
@@ -22,8 +37,9 @@ $(document).ready(function(){
         $(".cross").click(function(){
 
         
-            $("nav").removeClass("show-nav");
+            // $("nav").removeClass("show-nav");
             $('.hamburger').css('visibility', 'visible');
+            $("nav").css('transform', 'translateX(-100%)');
 
     
         });

@@ -42,7 +42,7 @@ header{
     background-color: #f5f4ef;
     top: 0;
     z-index: 99;
-    transition: all linear 0.5s;
+    transition: all linear 0.8s;
     transform: translateY(-100%);
     
 
@@ -67,6 +67,7 @@ nav .logo{
 
     width: 70px;
 }
+
 .right{
 
     width: 40%;
@@ -141,6 +142,11 @@ nav{
     background-color: #f5f4ef;
     padding: 2em 0;
     z-index: 999;
+    transition: linear 0.8s;
+    transform: translateX(-100%);
+
+
+
    
 
 }
@@ -151,14 +157,12 @@ nav{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-    position: sticky;
+    position: sticky; 
     top: 80px;
     overflow-x: hidden;
     overflow-y: auto;
-    /* background-color: #f5f4ef; */
-   
-    /* transition: all linear 0.5s;
-    transform: translateX(-100%); */
+    background-color: #f5f4ef;
+
 }
 
 .nav ul{
@@ -636,7 +640,6 @@ a{
     }
     nav{
 
-        display: none;
         padding: 0;
     }
   
@@ -656,7 +659,7 @@ a{
         margin: auto;
         display: block;
     }
-    
+   
     .hamburger{
 
         display: flex;
@@ -709,20 +712,26 @@ a{
         width: 35%;
     }
     nav{
-
         width: 50%;
         top: 0;
         justify-content: flex-start;
         align-items: flex-start;
-        
         /* padding-top: 4em ; */
         z-index: 10000;
+        /* opacity: 0; */
+        position: fixed;
+        transition: all ease-in-out 0.8s;
+
 
     }
     .nav{
 
         align-items: flex-end;
         height: 100vh;
+        position: static;
+        top: auto;
+        
+        
 
 
     }
@@ -783,9 +792,14 @@ a{
     }
     .show-nav{
         /* visibility: visible; */
-        display: block;
-        position: fixed;
-        top: 0;
+        /* position: fixed;         */
+        /* top: 0; */
+        transition: all ease-in-out 0.8s;
+        /* display: block; */
+
+
+
+
     }
     .bg{
 
@@ -968,6 +982,10 @@ a{
 
     }
 
+}
+
+@media screen and (max-width:640px){
+    
 }
 
 @media screen and (max-width:425px){
